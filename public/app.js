@@ -176,10 +176,10 @@ var uiController = (function() {
       var html, newHtml;
       if (type == "inc") {
         html =
-          '<div class="item " id="inc-%id%"> <div class="item__description">%description%</div> <div class="right "> <div class="item__value">%value%</div> <div class="item__delete"> <button class="item__delete--btn"> <i class="ion-ios-close-outline"> </i> </button> </div> </div> </div>';
+          '<div class="item " id="inc-%id%"> <div class="item__description">%description%</div> <div class="right "> <div class="item__value">%value%</div> <div class="item__delete"> <button class="item__delete--btn"> &#x2715; </button> </div> </div> </div>';
       } else if (type == "exp") {
         html =
-          '<div class="item " id="exp-%id%"><div class="item__description">%description%</div><div class="right "><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+          '<div class="item " id="exp-%id%"><div class="item__description">%description%</div><div class="right "><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"> &#x2715; </i></button></div></div></div>';
       }
 
       // 2. replace placeholder text with actual data
@@ -338,12 +338,12 @@ var controller = (function(bgtCtrl, uiCtrl) {
   var ctrlDeleteItem = function(event) {
     console.log(
       "event target:",
-      event.target.parentNode.parentNode.parentNode.parentNode.id
+      event.target.parentNode.parentNode.parentNode.id
     );
 
     //1.get the element id
     var itemId, splitId, id, type;
-    itemId = event.target.parentNode.parentNode.parentNode.parentNode.id;
+    itemId = event.target.parentNode.parentNode.parentNode.id;
     if (itemId) {
       splitId = itemId.split("-");
       id = parseInt(splitId[1]);

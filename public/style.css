@@ -159,7 +159,7 @@ body {
 }
 
 .add__btn {
-  font-size: 20px;
+  font-size: 17px;
   background: #fff;
   border: 1px solid #28b9b5;
   color: #28b9b5;
@@ -256,18 +256,25 @@ h2 {
 .expenses .item__delete--btn {
   color: #ff5049;
 }
-
+.expenses .item__delete--btn {
+  border: 1px solid #ff5049;
+}
+.income .item__delete--btn {
+  border: 1px solid #28b9b5;
+}
 .item__delete {
   float: left;
 }
 
 .item__delete--btn {
-  font-size: 16px;
   background: none;
-  border: none;
   cursor: pointer;
-  padding: 0 12px;
   display: none;
+  height: 20px;
+  width: 20px;
+  padding: 1px;
+  border-radius: 50%;
+  font-size: 12px;
 }
 
 .item__delete--btn:focus {
