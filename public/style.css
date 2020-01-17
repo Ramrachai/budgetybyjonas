@@ -130,14 +130,13 @@ body {
 }
 
 .add__type {
-  /* width: 55px; */
   border: 1px solid #e7e7e7;
-  height: 44px;
   font-size: 18px;
   color: inherit;
   background-color: #fff;
   font-weight: 300;
   transition: border 0.3s;
+  padding: 8px 15px;
 }
 
 .add__description,
@@ -146,8 +145,8 @@ body {
   background-color: #fff;
   color: inherit;
   font-family: inherit;
-  font-size: 14px;
-  padding: 12px 15px;
+  font-size: 16px;
+  padding: 10px 15px;
   border-radius: 5px;
   transition: border 0.3s;
 }
@@ -160,12 +159,12 @@ body {
 }
 
 .add__btn {
-  font-size: 35px;
+  font-size: 20px;
   background: #fff;
   border: 1px solid #28b9b5;
   color: #28b9b5;
   cursor: pointer;
-  margin-top: 8px;
+  padding: 8px 12px;
 }
 
 .add__btn:active {
@@ -327,5 +326,8 @@ h2 {
   }
   .budget {
     width: 80%;
+  }
+  .add__btn {
+    margin-top: 10px;
   }
 }
