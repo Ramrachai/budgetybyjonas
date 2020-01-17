@@ -1,0 +1,2 @@
+This is a budget calculation app used Vanilla JS.  
+I made this app following a udemy couse. Course author is Jonas. I really wanna thank him for this amazing project. Please <a href= "https://budgety-ram.firebaseapp.com/"> CLICK HERE FOR LIEVE PREVIEW </a>
