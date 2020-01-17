@@ -19,7 +19,7 @@ body {
   font-family: Open Sans;
   font-size: 16px;
   position: relative;
-  height: auto;
+  height: 100vh;
   font-weight: 400;
 }
 
@@ -38,7 +38,7 @@ body {
 **********************************************/
 
 .top {
-  height: 400px;
+  height: 40vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url(back.webp);
   background-size: cover;
@@ -48,7 +48,7 @@ body {
 
 .budget {
   position: absolute;
-  width: 50%;
+  width: 350px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -191,17 +191,19 @@ body {
 
 /***** LISTS *****/
 .container {
-  width: 90%;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 1000px;
+  margin: 60px auto;
 }
-.income__title {
-  text-align: left;
+
+.income {
+  float: left;
+  width: 475px;
+  margin-right: 50px;
 }
-.expenses__title {
-  text-align: right;
+
+.expenses {
+  float: left;
+  width: 475px;
 }
 
 h2 {
@@ -305,14 +307,4 @@ h2 {
 }
 .unpaid:hover .item__description {
   font-weight: 900;
-}
-
-@media only screen and (max-width: 768px) {
-  .budget__title {
-    font-size: 24px;
-  }
-  .add__container {
-    width: 80%;
-    display: flex;
-  }
 }

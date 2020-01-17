@@ -147,9 +147,11 @@ var uiController = (function() {
     var int = numbSplit[0];
     if (int.length > 3) {
       int =
-        int.splice(0, int.length - 3) +
+        int.substr(0, int.length - 3) +
         "," +
-        int.splice(int.length - 3, int.length);
+        int.substr(int.length - 3, int.length);
+    } else {
+      int = int;
     }
     // decimal part
     var decimal = numbSplit[1];
