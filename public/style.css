@@ -25,6 +25,7 @@ body {
 
 .red {
   color: #ff5049 !important;
+  border: 1px solid #ff5049 !important;
 }
 .red-focus:focus {
   border: 1px solid #ff5049 !important;
@@ -129,13 +130,12 @@ body {
 }
 
 .add__type {
-  width: 55px;
+  /* width: 55px; */
   border: 1px solid #e7e7e7;
   height: 44px;
   font-size: 18px;
   color: inherit;
   background-color: #fff;
-  margin-right: 10px;
   font-weight: 300;
   transition: border 0.3s;
 }
@@ -148,28 +148,24 @@ body {
   font-family: inherit;
   font-size: 14px;
   padding: 12px 15px;
-  margin-right: 10px;
   border-radius: 5px;
   transition: border 0.3s;
 }
 
 .add__description {
-  width: 400px;
+  /* width: 400px; */
 }
 .add__value {
-  width: 100px;
+  /* width: 100px; */
 }
 
 .add__btn {
   font-size: 35px;
-  background: none;
-  border: none;
+  background: #fff;
+  border: 1px solid #28b9b5;
   color: #28b9b5;
   cursor: pointer;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1.1;
-  margin-left: 10px;
+  margin-top: 8px;
 }
 
 .add__btn:active {
@@ -267,13 +263,11 @@ h2 {
 }
 
 .item__delete--btn {
-  font-size: 22px;
+  font-size: 16px;
   background: none;
   border: none;
   cursor: pointer;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
+  padding: 0 12px;
   display: none;
 }
 
@@ -321,7 +315,7 @@ h2 {
   }
   .add__container {
     width: 80%;
-    display: flex;
+    display: grid;
   }
   .icome__title,
   .expenses__title {
