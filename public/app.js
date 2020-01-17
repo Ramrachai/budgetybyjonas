@@ -150,8 +150,6 @@ var uiController = (function() {
         int.substr(0, int.length - 3) +
         "," +
         int.substr(int.length - 3, int.length);
-    } else {
-      int = int;
     }
     // decimal part
     var decimal = numbSplit[1];
@@ -178,10 +176,10 @@ var uiController = (function() {
       var html, newHtml;
       if (type == "inc") {
         html =
-          '<div class="item clearfix" id="inc-%id%"> <div class="item__description">%description%</div> <div class="right clearfix"> <div class="item__value">%value%</div> <div class="item__delete"> <button class="item__delete--btn"> <i class="ion-ios-close-outline"> </i> </button> </div> </div> </div>';
+          '<div class="item " id="inc-%id%"> <div class="item__description">%description%</div> <div class="right "> <div class="item__value">%value%</div> <div class="item__delete"> <button class="item__delete--btn"> <i class="ion-ios-close-outline"> </i> </button> </div> </div> </div>';
       } else if (type == "exp") {
         html =
-          '<div class="item clearfix" id="exp-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+          '<div class="item " id="exp-%id%"><div class="item__description">%description%</div><div class="right "><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
       }
 
       // 2. replace placeholder text with actual data
@@ -244,7 +242,7 @@ var uiController = (function() {
         if (percentages[index] > 0) {
           current.textContent = percentages[index] + "%";
         } else {
-          current.textContent = "---";
+          current.textContent = "-";
         }
       });
       // var nodelistForeach = function (field, )
